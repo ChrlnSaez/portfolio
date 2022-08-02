@@ -77,9 +77,9 @@ export const Banner = () => {
                       {'A Full Stack Developer | UI/UX Designer'}
                     </h2>
                   </h1>
-                  <button onClick={() => console.log('connect')}>
+                  <a href='#skills'>
                     Know me more <ArrowRightCircle size={25} />
-                  </button>
+                  </a>
                 </div>
               )}
             </TrackVisibility>
