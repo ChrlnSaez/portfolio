@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import Avatar from '../assets/img/Avatar.png';
+import Photo from '../assets/img/Photo.png';
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -91,7 +91,7 @@ export const Banner = () => {
                   className={
                     isVisible ? 'animate__animated animate__zoomIn' : ''
                   }>
-                  <img src={Avatar} alt='' />
+                  <img src={Photo} alt='' />
                 </div>
               )}
             </TrackVisibility>

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import Avatar2 from '../assets/img/Avatar2.png';
+import Avatar from '../assets/img/Avatar.png';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import emailjs from 'emailjs-com';
@@ -86,7 +86,7 @@ export const Contact = () => {
                   className={
                     isVisible ? 'animate__animated animate__zoomIn' : ''
                   }
-                  src={Avatar2}
+                  src={Avatar}
                   alt='Contact Us'
                 />
               )}

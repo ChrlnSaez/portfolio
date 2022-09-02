@@ -270,10 +270,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.3s ease-in-out;
   line-height: 1;
 }
+
 .banner a:hover svg {
   margin-left: 25px;
   color: white;
 }
+
+.banner img {
+
+}
+
 .title {
 height: 50px;
 overflow: hidden;
@@ -308,7 +314,7 @@ overflow: hidden;
 .banner img {
   background: rgba(200, 187, 187, 0.3);
   width: 25em;
-  border-radius: 50%;
+  border-radius: 500px;
   border: white 5px solid;
 }
 .skill {
@@ -535,8 +541,8 @@ overflow: hidden;
 .contact img {
   width: 80%;
   border-radius: 50%;
-  border: #000 3px solid;
-  background: rgba(39, 38, 38, 0.3);
+  border: #fff 3px solid;
+  background: rgba(171, 169, 169, 0.3);
 }
 .contact h2 {
 	font-size: 45px;
