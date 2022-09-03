@@ -29,7 +29,7 @@ const products = [
   {
     id: 5,
     img: StudentProfile,
-    link: 'https://www.youtube.com',
+    link: 'https://cypberpunk-client.vercel.app/',
   },
 ];
 
