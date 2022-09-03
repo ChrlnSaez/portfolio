@@ -3,6 +3,7 @@ import Kyber from '../assets/projects/Kyber.png';
 import Rock from '../assets/projects/Rock.png';
 import SaezBlog from '../assets/projects/SaezBlog.png';
 import Sapero from '../assets/projects/Sapero.png';
+import StudentProfile from '../assets/projects/student_profile.png';
 
 const products = [
   {
@@ -24,6 +25,11 @@ const products = [
     id: 4,
     img: Sapero,
     link: 'https://sapero.vercel.app/',
+  },
+  {
+    id: 5,
+    img: StudentProfile,
+    link: 'https://www.youtube.com',
   },
 ];
 
