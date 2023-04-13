@@ -1,44 +1,49 @@
-import Product from './Product';
-import Kyber from '../assets/projects/Kyber.png';
-import Rock from '../assets/projects/Rock.png';
-import SaezBlog from '../assets/projects/SaezBlog.png';
-import Sapero from '../assets/projects/Sapero.png';
-import StudentProfile from '../assets/projects/student_profile.png';
+import Product from "./Product";
+import Kyber from "../assets/projects/Kyber.png";
+import SaezBlog from "../assets/projects/SaezBlog.png";
+import Sapero from "../assets/projects/Sapero.png";
+import Cartify from "../assets/projects/cartify.png";
+import Electricity from "../assets/projects/electricity.png";
+import CineClick from "../assets/projects/cineclick.png";
+import TravelTrio from "../assets/projects/traveltrio.png";
 
 const products = [
   {
-    id: 1,
     img: Kyber,
-    link: 'https://chrlnsaez.github.io/Kyber/',
+    link: "https://chrlnsaez.github.io/Kyber/",
   },
   {
-    id: 2,
-    img: Rock,
-    link: 'https://chrlnsaez.github.io/RockPaperScissors/',
-  },
-  {
-    id: 3,
     img: SaezBlog,
-    link: 'https://chrlnsaez.github.io/PersonalBlog/',
+    link: "https://chrlnsaez.github.io/PersonalBlog/",
   },
   {
-    id: 4,
     img: Sapero,
-    link: 'https://sapero.vercel.app/',
+    link: "https://sapero.vercel.app/",
   },
   {
-    id: 5,
-    img: StudentProfile,
-    link: 'https://cypberpunk-client.vercel.app/',
+    img: Cartify,
+    link: "https://www.figma.com/file/Am8rrReYkdMJUxsFNh3pHk/Shopping-Cart?node-id=6%3A2&t=D9uhOyCLijIgweag-1",
+  },
+  {
+    img: Electricity,
+    link: "https://www.figma.com/file/5ZXZFsEpiv175Y4F7DoQCl/Electricity?node-id=0%3A1&t=D9uhOyCLijIgweag-1",
+  },
+  {
+    img: CineClick,
+    link: "https://www.figma.com/file/JDrSmGk1sqGWpI3NH4In8j/CineClick?t=D9uhOyCLijIgweag-1",
+  },
+  {
+    img: TravelTrio,
+    link: "https://traveltrio.vercel.app/",
   },
 ];
 
 const ProductList = () => {
   return (
-    <div className='pl'>
-      <div className='pl-list'>
-        {products.map((item) => (
-          <Product key={item.id} img={item.img} link={item.link} />
+    <div className="pl">
+      <div className="pl-list">
+        {products.map((item, index) => (
+          <Product key={index} img={item.img} link={item.link} />
         ))}
       </div>
     </div>

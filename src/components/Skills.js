@@ -1,13 +1,13 @@
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
-import html from '../assets/img/html.svg';
-import css from '../assets/img/css.svg';
-import javascript from '../assets/img/javascript.svg';
-import react from '../assets/img/react.svg';
-import nodejs from '../assets/img/nodejs.svg';
-import python from '../assets/img/python.svg';
-import bootstrap from '../assets/img/bootstrap.svg';
-import tailwind from '../assets/img/tailwind.svg';
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import html from "../assets/img/html.svg";
+import photoshop from "../assets/img/photoshop.svg";
+import css from "../assets/img/css.svg";
+import javascript from "../assets/img/javascript.svg";
+import react from "../assets/img/react.svg";
+import nodejs from "../assets/img/nodejs.svg";
+import figma from "../assets/img/figma.svg";
+import tailwind from "../assets/img/tailwind.svg";
 
 export const Skills = () => {
   const responsive = {
@@ -30,46 +30,47 @@ export const Skills = () => {
   };
 
   return (
-    <section className='skill' id='skills'>
-      <div className='container'>
-        <div className='row'>
-          <div className='col-12'>
-            <div className='skill-bx wow zoomIn'>
-              <h2 className='p-2'>Skills</h2>
+    <section className="skill" id="skills">
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <div className="skill-bx wow zoomIn">
+              <h2 className="p-2">Skills</h2>
               <Carousel
                 responsive={responsive}
                 infinite={true}
-                className='owl-carousel owl-theme skill-slider'>
-                <div className='item'>
-                  <img src={html} alt='HTMl' />
+                className="owl-carousel owl-theme skill-slider"
+              >
+                <div className="item">
+                  <img src={html} alt="HTMl" />
                   <h5>HTML</h5>
                 </div>
-                <div className='item'>
-                  <img src={css} alt='CSS' />
+                <div className="item">
+                  <img src={css} alt="CSS" />
                   <h5>CSS</h5>
                 </div>
-                <div className='item'>
-                  <img src={javascript} alt='JavaScript' />
+                <div className="item">
+                  <img src={javascript} alt="JavaScript" />
                   <h5>JavaScript</h5>
                 </div>
-                <div className='item'>
-                  <img src={react} alt='React JS' />
+                <div className="item">
+                  <img src={react} alt="React JS" />
                   <h5>React JS</h5>
                 </div>
-                <div className='item'>
-                  <img src={nodejs} alt='NodeJS' />
+                <div className="item">
+                  <img src={nodejs} alt="NodeJS" />
                   <h5>NodeJS</h5>
                 </div>
-                <div className='item'>
-                  <img src={python} alt='Python' />
-                  <h5>Python</h5>
+                <div className="item">
+                  <img src={photoshop} alt="Photoshop" />
+                  <h5>Photoshop</h5>
                 </div>
-                <div className='item'>
-                  <img src={bootstrap} alt='Bootstrap' />
-                  <h5>Bootstrap</h5>
+                <div className="item">
+                  <img src={figma} alt="Figma" />
+                  <h5>Figma</h5>
                 </div>
-                <div className='item'>
-                  <img src={tailwind} alt='Tailwind' />
+                <div className="item">
+                  <img src={tailwind} alt="Tailwind" />
                   <h5>Tailwind</h5>
                 </div>
               </Carousel>
