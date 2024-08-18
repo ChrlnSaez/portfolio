@@ -1,56 +1,10 @@
-import { useState, useEffect } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import Photo from '../assets/img/Photo.png';
+import Photo from '../assets/img/gradpicsquare.JPG';
+import { Col, Container, Row } from 'react-bootstrap';
 
 export const Banner = () => {
-  const [loopNum, setLoopNum] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
-  const [text, setText] = useState('');
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const [index, setIndex] = useState(1);
-  const toRotate = ['Hello!', 'Hola!', 'Kamusta!', 'Bonjour!', 'Konnichiwa!'];
-  const period = 1000;
-
-  useEffect(() => {
-    let ticker = setInterval(() => {
-      tick();
-    }, delta);
-
-    return () => {
-      clearInterval(ticker);
-    };
-  }, [text]);
-
-  const tick = () => {
-    let i = loopNum % toRotate.length;
-    let fullText = toRotate[i];
-    let updatedText = isDeleting
-      ? fullText.substring(0, text.length - 1)
-      : fullText.substring(0, text.length + 1);
-
-    setText(updatedText);
-
-    if (isDeleting) {
-      setDelta((prevDelta) => prevDelta / 2);
-    }
-
-    if (!isDeleting && updatedText === fullText) {
-      setIsDeleting(true);
-      setIndex((prevIndex) => prevIndex - 1);
-      setDelta(period);
-    } else if (isDeleting && updatedText === '') {
-      setIsDeleting(false);
-      setLoopNum(loopNum + 1);
-      setIndex(1);
-      setDelta(100);
-    } else {
-      setIndex((prevIndex) => prevIndex + 1);
-    }
-  };
-
   return (
     <section className='banner' id='home'>
       <Container>
@@ -74,7 +28,7 @@ export const Banner = () => {
                   <h1>
                     {`I'm Charlene Saez`} <br />
                     <h2 className=''>
-                      {'A Full Stack Developer | UI/UX Designer'}
+                      Graphic Designer
                     </h2>
                   </h1>
                   <a href='#skills'>
@@ -91,7 +45,7 @@ export const Banner = () => {
                   className={
                     isVisible ? 'animate__animated animate__zoomIn' : ''
                   }>
-                  <img src={Photo} alt='' />
+                  <img style={{ borderRadius: '9999px' }} src={Photo} alt='' />
                 </div>
               )}
             </TrackVisibility>

@@ -3,11 +3,7 @@ import "react-multi-carousel/lib/styles.css";
 import html from "../assets/img/html.svg";
 import photoshop from "../assets/img/photoshop.svg";
 import css from "../assets/img/css.svg";
-import javascript from "../assets/img/javascript.svg";
-import react from "../assets/img/react.svg";
-import nodejs from "../assets/img/nodejs.svg";
 import figma from "../assets/img/figma.svg";
-import tailwind from "../assets/img/tailwind.svg";
 
 export const Skills = () => {
   const responsive = {
@@ -50,28 +46,12 @@ export const Skills = () => {
                   <h5>CSS</h5>
                 </div>
                 <div className="item">
-                  <img src={javascript} alt="JavaScript" />
-                  <h5>JavaScript</h5>
-                </div>
-                <div className="item">
-                  <img src={react} alt="React JS" />
-                  <h5>React JS</h5>
-                </div>
-                <div className="item">
-                  <img src={nodejs} alt="NodeJS" />
-                  <h5>NodeJS</h5>
-                </div>
-                <div className="item">
                   <img src={photoshop} alt="Photoshop" />
                   <h5>Photoshop</h5>
                 </div>
                 <div className="item">
                   <img src={figma} alt="Figma" />
                   <h5>Figma</h5>
-                </div>
-                <div className="item">
-                  <img src={tailwind} alt="Tailwind" />
-                  <h5>Tailwind</h5>
                 </div>
               </Carousel>
             </div>
